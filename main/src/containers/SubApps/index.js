@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  background-color: pink;
+  padding: 2rem;
+`;
 
 class SubApps extends Component {
   constructor(props) {
@@ -32,7 +38,11 @@ class SubApps extends Component {
     //   return <div>loading...</div>;
     // }
 
-    return <div id="subroot-1" />;
+    return (
+      <Wrapper>
+        <div id="subroot-1" />
+      </Wrapper>
+    );
   }
 }
 

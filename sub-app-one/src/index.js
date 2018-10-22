@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  background-color: aqua;
+`;
 
 class App extends Component {
   constructor(props) {
@@ -17,7 +22,7 @@ class App extends Component {
 
   render() {
     const { counter } = this.state;
-    return <div>Howdy from sub app one! {counter}</div>;
+    return <Wrapper>Howdy from sub app one! {counter}</Wrapper>;
   }
 }
 
